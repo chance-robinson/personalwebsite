@@ -1,0 +1,113 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+}
+
+#Contact {
+  padding-top: 1%;
+  text-align: center;
+  color: white;
+}
+
+.navbar {
+  background-color: rgb(125, 241, 241);
+}
+
+.footerfix {
+  height: 9rem;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 1%;
+  text-align: center;
+  background-color: rgb(125, 241, 241);
+}
+
+.footButton {
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.footButton:hover {
+  background-color: rgba(40, 120, 190, 0.37);
+  color: white !important;
+}
+
+#Contact {
+  color: white;
+}
+
+.navbar-nav {
+  width: inherit;
+  font-size: 1.5em;
+  margin-left: 2%;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(40, 120, 190, 0.37);
+  color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0);
+}
+
+.img {
+  max-width: 50%;
+}
+
+#headertext {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.col-8 {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-right: 2px dashed #f69c55;
+}
+
+.desc .col-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #f69c55;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.intro {
+  margin-top: 20px;
+}
+
+#weather {
+  border-bottom: 2px dashed rgb(125, 241, 241);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#linedash {
+  border-right: 2px dashed rgb(125, 241, 241);
+}
+
+.new1 {
+  border-top: 2px dashed rgb(125, 241, 241);
+}
