@@ -15,7 +15,8 @@ document.getElementById("weatherSubmit").addEventListener("click", function (eve
       for (let i = 0; i < json.weather.length; i++) {
         results += '<img src="http://openweathermap.org/img/w/' + json.weather[i].icon + '.png"/>';
       }
-      results += '<h2>' + json.main.temp + " &deg;F</h2>"
+      results += '<h2>' + json.main.temp + " &deg;F</h2>";
+      results += "<p>Humidity: "+json.main.humidity+"%</p>";
       results += "<p>"
       for (let i = 0; i < json.weather.length; i++) {
         results += json.weather[i].description;
