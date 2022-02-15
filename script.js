@@ -23,7 +23,7 @@ document.getElementById("weatherSubmit").addEventListener("click", function (eve
           results += ", "
       }
       results += "</p>";
-      results += "<h2>Feels like: "+json.main.feels_like+"</h2>";
+      results += "<h2>Feels like: "+json.main.feels_like+" &deg;F</h2>";
       document.getElementById("weatherResults").innerHTML = results;
     });
   const url2 = "https://api.openweathermap.org/data/2.5/forecast?q=" + value + ", US&units=imperial" + "&APPID=305a5cbd47e85cf7acdb61c68f952056";
