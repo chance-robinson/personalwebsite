@@ -41,7 +41,7 @@ document.getElementById("weatherSubmit").addEventListener("click", function (eve
         forecast += '<img src="http://openweathermap.org/img/w/' + json.list[i].weather[0].icon + '.png"/>';
         forecast += "<p>Feels like: " + json.list[i].main.feels_like + "</p>";
       }
-      for (let i = 0; i < 2; i++) {
+      for (let i = 0; i < json.list.length; i++) {
         threeHourForecast += '<div class="new1"></div>';
         threeHourForecast += "<p>" + moment(json.list[i].dt_txt).format('MMMM Do YYYY, h:mm:ss a') + "</p>";
         threeHourForecast += "<p>Temperature: " + json.list[i].main.temp + "</p>";
