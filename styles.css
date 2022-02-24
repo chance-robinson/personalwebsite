@@ -111,3 +111,11 @@ body {
 .new1 {
   border-top: 2px dashed rgb(125, 241, 241);
 }
+
+#topSpacing {
+  padding-top: 2rem;
+}
+
+#gitImage {
+  padding-top: 2rem;
+}

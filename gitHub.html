@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css" />
-  <title>Nasa API</title>
+  <title>GitHub API</title>
 </head>
 
 <body>
@@ -25,13 +25,42 @@
         <a class="nav-item nav-link" href="exp.html">Experience</a>
         <a class="nav-item nav-link" href="proj.html">Projects</a>
         <a class="nav-item nav-link" href="weather.html">Weather</a>
-        <a class="nav-item nav-link" href="stocks.html">Stocks API</a>
+        <a class="nav-item nav-link" href="gitHub.html">GitHub API</a>
       </div>
     </div>
   </nav>
 
-
-
+  <div class="container">
+    <div class="row" id="topSpacing">
+      <div class="col">
+        <h1>GitHub user data</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <form id="idForm">
+          <label>Enter a GitHub username: </label>
+          <input id="userInput" type="text" value="chance-robinson">
+          <input type="submit" value="Submit">
+      </div>
+    </div>
+    <a href=""></a>
+    <div class="row">
+      <div class="col-4 text-center">
+        <img id="gitImage" src="" alt="" width = "100%">
+      </div>
+      <div class="col-4 text-center">
+        <div id="gitURL"></div>
+        <div id="gitId"></div>
+        <div id="gitName"></div>
+        <div id="gitEmail"></div>
+        <div id="gitBio"></div>
+      </div>
+      <div class="col-4 text-center">
+        <div id="publicRepos"></div>
+      </div>
+    </div>
+  </div>
 
   <div class="footerfix"></div>
   <div class="footer text-center fixed-bottom">
@@ -48,8 +77,7 @@
         <p id="Contact">2022 Copyright: Chance Robinson</p>
       </div>
 
-      <script src="finnhub.js"></script>
-      <script src="stockscript.js"></script>
+      <script src="gitHubScript.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
       </script>
