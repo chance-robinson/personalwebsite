@@ -10,7 +10,7 @@
     <title>Weather Page</title>
 </head>
 
-<body">
+<body id="comicBody">
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
             <img src="/images/download.png" class="logo" alt="Camera Icon" width='80px' height="80px">
@@ -46,9 +46,9 @@
                         <button v-on:click="randomComic">Random</button>
                     </p>
                     <h2>{{current.safe_title}}</h2>
-                    <img v-bind:src="current.img" v-bind:alt="current.alt">
+                    <img class="img-fluid" v-bind:src="current.img" v-bind:alt="current.alt">
                     <star-rating @rating-selected="setRating" v-bind:increment="0.5" v-bind:max-rating="5"
-                        inactive-color="#fff" active-color="#f00" v-bind:star-size="90" v-bind:show-rating="false">
+                        inactive-color="#fff" active-color="#f00" v-bind:show-rating="false">
                         ></star-rating>
                     <p>Average Rating: {{ratingAvg}}</p>
                     <p>{{current.alt}}</p>
