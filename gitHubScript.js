@@ -11,7 +11,6 @@ document.getElementById("idForm").addEventListener("submit", function (event) {
             document.getElementById("gitId").innerHTML = "<p>ID = " + json.id + "</p>"
             document.getElementById("gitImage").src = json.avatar_url;
             document.getElementById("gitName").innerHTML = "<p>Name = " + json.name + "</p>";
-            document.getElementById("gitEmail").innerHTML = "<p>Email = " + json.email + "</p>";
             document.getElementById("gitBio").innerHTML = "<p>Bio = " + json.bio + "</p>";
             var repos_url = json["repos_url"];
             fetch(repos_url)
