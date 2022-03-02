@@ -41,9 +41,11 @@
                 </div>
                 <div v-else>
                     <p>
+                        <button v-on:click="firstComic">First</button>
                         <button v-on:click="previousComic">Previous</button>
                         <button v-on:click="nextComic">Next</button>
                         <button v-on:click="randomComic">Random</button>
+                        <button v-on:click="lastComic">Last</button>
                     </p>
                     <h2>{{current.safe_title}}</h2>
                     <img class="img-fluid" v-bind:src="current.img" v-bind:alt="current.alt">

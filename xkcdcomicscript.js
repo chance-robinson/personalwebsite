@@ -56,6 +56,12 @@ let app = new Vue({
         randomComic() {
             this.number = this.getRandom(1, this.max);
         },
+        lastComic() {
+            this.number = this.max;
+        },
+        firstComic() {
+            this.number = 1;
+        },
         addComment() {
             if (!(this.number in this.comments))
                 Vue.set(app.comments, this.number, new Array);
